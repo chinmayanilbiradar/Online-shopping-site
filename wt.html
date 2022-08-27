@@ -1,0 +1,251 @@
+<html>
+    <head>
+        <title>VAC</title>
+        <!--link rel="stylesheet" type="text/css" href="/css1.css">-->
+        <style>
+            *{
+    margin:  0;
+    padding: 0;
+    font-family: Century Gothic; 
+}
+
+header{
+    background-color:black;
+    background-size: cover;
+    background-position: center ;
+
+}
+.ul{
+    float: right;
+    list-style-type: none;
+    margin-top: 25px;
+    
+}
+.ul li{
+    display: inline-block;
+}
+.ul li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+    border: 1px solid transparent; 
+    transition: 0.4s ease;
+}
+.ul li a:hover{
+    color:#000;
+    background-color:#fff;
+}
+
+.ul li .active a{
+    color: black;
+    background-color: #fff;
+}
+.logo img{
+    float:left;
+    width: 300px;
+    height: 150px;
+}
+.main{
+    max-width: 1200px;
+    /*margin: auto;*/
+}
+.title{
+    position:absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.title h1{
+    color: #fff;
+    size:px;
+}
+.rimage{
+    position:center;
+    margin-left:330px;
+    width:400px;
+
+}
+.image_img1{
+    
+    display:block;
+    margin-top:50px;
+    width:900px;
+}
+
+.image_overlay1{
+    position : absolute;
+    top:150px;
+    left:310px;
+    right:310px;
+    width:950px; 
+    height:600px;
+    background: rgba(0,0,0,0.6);
+    color:#fff;
+    font-family:"Quicksand" , Century Gothic;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    opacity:0;
+    transition: opacity 0.25s ease;
+}
+.image_overlay--blur1{
+    backdrop-filter:blur(5px);
+}
+.image_overlay1 >*{
+    transform: translateY(20px);
+    transition: transform 0.25s;
+}
+.image_overlay1:hover{
+    opacity:1;
+}
+.image_overlay1:hover >*{
+    transform: translateY(0);
+}
+
+.image_title1{
+    size: 5em;
+    font-family:Century gothic;
+    font-weight:bold;
+
+}
+
+.simage{
+    position:center;
+    margin-left:330px;
+    width:400px;
+
+}
+.image_img2{
+    
+    display:block;
+    margin-top:50px;
+    width:900px;
+}
+
+.image_overlay2{
+    position : absolute;
+    top:700px;
+    left:310px;
+    width:950px;
+    height:500px;
+    background: rgba(0,0,0,0.6);
+    color:#fff;
+    font-family:"Quicksand" , Century Gothic;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    opacity:0;
+    transition: opacity 0.25s ease;
+}
+.image_overlay--blur2{
+    backdrop-filter:blur(5px);
+}
+.image_overlay2 >*{
+    transform: translateY(20px);
+    transition: transform 0.25s;
+}
+.image_overlay2:hover{
+    opacity:1;
+}
+.image_overlay2:hover >*{
+    transform: translateY(0);
+}
+
+.image_title2{
+    size: 5em;
+    font-family:Century gothic;
+    font-weight:bold;
+
+}
+
+.mimage{
+    position:center;
+    margin-left:330px;
+    width:400px;
+
+}
+.image_img3{
+    
+    display:block;
+    margin-top:50px;
+    width:900px;
+}
+
+.image_overlay3{
+    position : absolute;
+    top:1150px;
+    left:310px;
+    width:950px;
+    height:450px;
+    background: rgba(0,0,0,0.6);
+    color:#fff;
+    font-family:"Quicksand" , Century Gothic;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    opacity:0;
+    transition: opacity 0.25s ease;
+}
+.image_overlay--blur3{
+    backdrop-filter:blur(5px);
+}
+.image_overlay3 >*{
+    transform: translateY(20px);
+    transition: transform 0.25s;
+}
+.image_overlay3:hover{
+    opacity:1;
+}
+.image_overlay3:hover >*{
+    transform: translateY(0);
+}
+
+.image_title3{
+    size: 5em;
+    font-family:Century gothic;
+    font-weight:bold;
+
+}
+
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="main">
+                <div class="logo">
+                    <img src="assets/images/Logo.jpeg">
+                </div>
+                <ul>
+                    <li class="active">
+                    <a href="/" style="font-size: 25;color: whitesmoke;">HOME</a></li>
+                    <li><a href="assets/links/gallery.html" style="font-size: 25;color: whitesmoke;">GALLERY</a></li>
+                    <li><a href="assets/links/about.html" style="font-size: 25;color: whitesmoke;">ABOUT</a></li>
+                    <li><a href="#" style="font-size: 25;color: whitesmoke;">SIGN-UP</a></li> 
+                </ul>
+            </div>
+            <div class="rimage">
+                <img class="image_img1" src="assets/images/restaurant.jpeg" alt="Groceries">
+                <div class="image_overlay1 image_overlay--blur1">
+                    <a href="assets/links/react.html"><div class="image_title1" style="font-size: 25;color: whitesmoke; font-style: italic;">GROCERIES</div></a>
+                </div>
+            </div>
+            <div class="simage">
+                <img class="image_img2" src="assets/images/shopping.jpeg" alt="Shopping">
+                <div class="image_overlay2 image_overlay--blur2">
+                    <a href="assets/links/index.html"><div class="image_title2" style="font-size: 25;color: whitesmoke; font-style: italic;">SHOPPING</div></a>
+                </div>
+            </div>
+            <div class="mimage">
+                <img class="image_img3" src="assets/images/medicinal.jpeg" alt="Pharmacy">
+                <div class="image_overlay3 image_overlay--blur3">
+                    <a href="assets/links/pharma.html"><div class="image_title3" style="font-size: 25;color: whitesmoke; font-style: italic;">PHARMACY</div></a>
+                </div>
+            </div>
+
+            </div>
+        </header>
+    </body>
+</html>

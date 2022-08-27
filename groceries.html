@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+        <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+        <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js" crossorigin></script>
+    </head>
+    <body>
+        <div id="root"></div>
+        <script type="text/babel">
+        class Item extends React.Component{
+            constructor(props){
+                super(props)
+                this.state={
+                    qty:'0',
+                    price:'0',
+                    handleAdd=this.handleAdd.bind(this),
+                    handleSub=this.handleSub.bind(this)
+                }
+                handleAdd(x)=(event)=>{
+                var item=event.target.value;
+                var price=this.state.price;
+                price=price+price*item;
+                return price;
+                
+                handleSub(x)=(event)=>{
+                var item=event.target.value;
+                var price=this.state.price;
+                return price;
+
+            }
+            }
+        }
+        </script>
+    </body>
+</html>

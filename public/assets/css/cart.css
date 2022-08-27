@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+*{
+  font-family:'Comfortaa',cursive;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container{
+  max-width: 1500px;
+  margin: 0 auto;
+  color:antiquewhite;
+}
+.container> h1{
+  padding: 20px 0;
+}
+.cart{
+  display: flex;
+}
+.products{
+  flex: 0.75;
+}
+.product{
+  margin-left:100px;
+  margin-right:100px;
+  display: flex;
+  width: 600px;
+  height: 400px;
+  overflow: hidden;
+  border: 1px solid silver;
+}
+.product:hover{
+  border: 4px solid rgb(240, 228, 174);
+  box-shadow: 2px 2px 6px rgba(255, 192, 203, 0);
+  transform: scale(1.01);
+  background-color: black;
+}
+.product>img{
+  width: 400px;
+  height: 300px;
+  object-fit: cover;
+  padding:5px;
+}
+.product>img:hover{
+  transform: scale(1.04);
+  border: 4px solid rgb(141, 134, 105);
+}
+.product-info{
+  padding: 20px;
+  width:100%;
+  position: relative;
+}
+.product-name, .product-price, .product-offer, .class{
+  margin-bottom: 20px;
+}
+
+.cart-total{
+  font-size: 25px;
+  width:100px;
+  font-family:Arial, Helvetica, sans-serif;
+  border:1px solid grey;
+  padding:5px;
+  align: right;
+  color:black;
+}
+.page{
+  padding:2px;
+  border: 1px solid silver;
+  background-color:rgb(2, 2, 2);
+  color:rgb(240, 211, 173);
+  align-items: center;
+  font-size: large;
+}
+.logo img{
+  width: 300px;
+  height: 150px;
+}
+
+
+
+
+
+
+
+
+
+
+
